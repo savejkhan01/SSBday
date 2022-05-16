@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ballon animation</title>
+
+
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		body {
+			background-color: #a6a6a6;
+		}
+
+		.back-video {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+		}
+
+		@media(min-aspect-ratio: 16/9) {
+			.back-video {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		@media(max-aspect-ratio: 16/9) {
+			.back-video {
+				width: auto;
+				height: 100%;
+			}
+		}
+
+		
+	</style>
+
+</head>
+
+<body>
+	<video autoplay loop muted plays-inline class="back-video">
+		<source src="./video/Happy_Birthday_Song__with_animated_magical_cake_celebration_in_4K(1080p)(0).mp4"
+			type="video/mp4">
+	</video>
+	<audio autoplay>
+		<source src="./video/Happy_Birthday_Song__with_animated_magical_cake_celebration_in_4K(1080p)(0).mp4"
+			type="audio/mpeg">
+	</audio>
+</body>
+
+</html>
